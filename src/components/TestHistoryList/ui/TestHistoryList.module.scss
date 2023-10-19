@@ -1,0 +1,27 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.table th {
+  background-color: #373737;
+  font-weight: bold;
+}
+
+.table tbody tr:hover {
+  background-color: #eaeaea;
+  color: #252525;
+  transition: all 0.5s;
+}
+
+.table tbody td {
+  white-space: nowrap;
+}

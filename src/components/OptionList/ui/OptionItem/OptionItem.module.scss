@@ -1,0 +1,43 @@
+.option_item {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+}
+
+.option_item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: rgba(116, 175, 255, 0.4);
+  opacity: 0;
+  border-radius: 10px;
+  transition:
+    width 0.5s,
+    height 0.5s,
+    opacity 0.5s;
+}
+
+.option_item:hover::before {
+  width: 130%;
+  height: 60%;
+  opacity: 1;
+}
+
+.red::before {
+  background-color: rgba(236, 42, 52, 0.4);
+  width: 130%;
+  height: 60%;
+  opacity: 1;
+}
+
+.green::before {
+  background-color: rgba(42, 224, 56, 0.4);
+  width: 130%;
+  height: 60%;
+  opacity: 1;
+}
